@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-void: #0A0A1A;
+  --color-ether: #4A90E2;
+  --color-deep: #2D1B69;
+  --color-soft: #E5E7FF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.bg-dream-gradient {
+  background: radial-gradient(ellipse at center, rgba(74, 144, 226, 0.15) 0%, transparent 70%);
+}
+
+.floating-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
